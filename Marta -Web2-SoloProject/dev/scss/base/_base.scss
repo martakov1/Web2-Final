@@ -1,0 +1,17 @@
+/* =============
+    Base
+============= */
+
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        transition: 0.25s;
+        display: inline-block;
+    }

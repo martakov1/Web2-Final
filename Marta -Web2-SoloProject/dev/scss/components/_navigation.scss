@@ -1,0 +1,51 @@
+/* =============
+    Navigation
+============= */
+#nav-container {
+    // border: 1px solid green;
+    ul {
+        // position: relative;
+        // transform: translateX(70%);
+        
+
+        list-style-type: none;
+        height: 100%;
+        // align-items: center;
+        text-align: center;
+        width: 100%;
+       
+       
+
+        @include lg {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+           
+        //    border: 1px solid red;
+          
+        
+            @include lg {
+                align-items: center;
+                display: flex;
+                margin: 0px 15px;
+            }
+
+            a:link,
+            a:visited {
+                padding: 10px 0px;
+                color: $white;
+                transition: 0.25s;
+                width: 100%;
+                
+            }
+
+            a:hover,
+            a:active {
+                background-color: $dark-purple;
+            
+            }
+        }
+    }
+}

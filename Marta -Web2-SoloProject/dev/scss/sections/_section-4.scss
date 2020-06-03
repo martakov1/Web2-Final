@@ -1,0 +1,121 @@
+/* =============
+    Section 4
+============= */
+#section-4 {
+	display: grid;
+	grid-template-areas: ". section-4 .";
+	grid-template-columns: 15px auto 15px;
+	padding: 0px 20px;
+	
+	
+	@include md {
+        grid-template-columns: auto 80% auto;
+        padding: 32px 0 40px;
+    }
+    @include lg{
+        padding: 70px 0;
+    }
+	@include xl {
+        grid-template-columns: auto 1200px auto;
+        padding: 100px 0 80px;
+	}
+	>div {
+		grid-area: section-4;
+		
+		#gallery { 
+			
+			ul {
+				display: grid;
+				gap: 21px;
+				
+
+				@include md {
+					display: grid;
+					grid-template-areas: 
+					"section-4-1 section-4-2 section-4-3";
+					grid-template-columns: repeat(3, 1fr);
+				}
+				@include lg {
+					grid-template-areas: "section-4-1 section-4-2 section-4-3";
+					grid-template-columns: repeat(3, 1fr);
+				}
+				li {
+					background-color: #F7F7F7;
+					list-style: none;
+					border: 7px solid #7EAACD;
+					border-radius: 5px;
+
+					div {
+						background-size: cover;
+						height: 200px;
+					}
+					section {
+						padding: 20px;
+						@include lg {
+							padding: 24px;
+						}
+						h1 {
+							font-size: rem-calc(24);
+							text-align: center;
+							
+							@include lg {
+								ont-size: rem-calc(28);
+							}
+						}
+						p {
+							line-height: rem-calc(19);
+							margin: 20px 0;
+							text-align: justify;
+							@include lg {
+								font-size: rem-calc(19);
+								line-height: rem-calc(23);
+							}
+						}
+						.button-2 {
+						
+							font-size: rem-calc(20);
+							text-align: center;
+							background: $dark-purple;
+							color: white;
+							border-radius: 4px;
+							height: 50px;
+							width: 139px;
+							margin: 0% 28.5%;
+        					display: flex;
+        					justify-content: center;
+        					align-items: center;
+							
+							@include lg {
+								font-size: rem-calc(16);
+							}
+						}
+					}
+				}
+				#section-4-1 {
+					@include md {
+						grid-area: 4.1;
+					}
+					div {
+						background-image: url("../img/section-4/4.1.jpg");
+					}
+				}
+				#section-4-2{
+					@include md {
+						grid-area: 4.2;
+					}
+					div {
+						background-image: url("../img/section-4/4.2.jpg");
+					}
+				}
+				#section-4-3 {
+					@include md {
+						grid-area: 4.3;
+					}
+					div {
+						background-image: url("../img/section-4/4.3.jpg");
+					}
+				}
+			}
+		}
+	}
+}

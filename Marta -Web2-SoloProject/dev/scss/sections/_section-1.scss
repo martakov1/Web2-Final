@@ -1,0 +1,94 @@
+/* =============
+    Section 1
+============= */
+#section-1 {
+
+	background-image: url("../img/section-1/1.jpg");
+	
+	background-position: center;
+	background-size: cover;
+	padding: 80px 0 80px;
+    // text-align: center;
+    height: 305px;
+   
+
+    @include md{
+        height: 609px;
+
+    }
+
+    @include lg{
+        height: 938px;
+    }
+
+#text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+	h1{
+        color: $white;
+        font-family: 'Muli', sans-serif;
+        font-size: 101px;
+        font-size: rem-calc(47);
+		width: 90%;
+        text-align: center;
+		color: #FFFFFF;
+		letter-spacing: 0;
+        text-shadow: 8px 10px 3px rgba(130,47,52,0.80);
+    
+        @include md{
+            font-size: rem-calc(57);
+            line-height: rem-calc(66);
+        }
+
+        @include lg{
+            font-size: rem-calc(70);
+            line-height: rem-calc(86);
+            padding-top: 4%;
+        }
+
+        @include xl{
+            border: none;
+            font-size: rem-calc(87);
+            line-height: rem-calc(106);
+            padding-top: 8%;
+        }
+	}
+	
+	h3{
+        color: $white;
+        font-family: 'Muli', sans-serif;
+        font-weight: 100;
+        font-size: rem-calc(27);
+        line-height: rem-calc(25);
+        padding: 0 0 0 20px;
+		text-align: center;
+		color: #FFFFFF;
+		letter-spacing: 0;
+		text-shadow: 8px 10px 3px rgba(130,47,52,0.80);
+
+        @include md{
+            font-size: rem-calc(57);
+            line-height: rem-calc(66);
+            padding: 0 7%;
+        }
+
+        @include lg{
+            font-size: rem-calc(70);
+            line-height: rem-calc(86);
+            padding-top: 4%;
+        }
+
+        @include xl{
+            border: none;
+            font-size: rem-calc(87);
+            line-height: rem-calc(106);
+            padding-top: 8%;
+        }
+    }
+}
+}

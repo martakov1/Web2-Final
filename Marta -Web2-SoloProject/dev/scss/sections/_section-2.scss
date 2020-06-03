@@ -1,0 +1,45 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+   
+    padding: 0% 20% 0% 20%;
+     
+    @include md{
+        height: 512px;
+       
+    }
+
+    @include lg{
+        height: 683px;
+       
+    }
+
+    @include xl{
+        height: 800px;
+        
+    }
+    .button-1{
+        background: #F7C8E0;
+        box-shadow: 9px 9px 12px 0 rgba(0,0,0,0.50);
+        border-radius: 4px;
+        height: 87px;
+        width: 242px;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h2{
+        font-family: TitilliumWeb-Italic;
+        font-size: 30px;
+        color: #2A2369;
+        text-align: center;
+        text-shadow: 9px 9px 12px rgba(0,0,0,0.50);
+    
+        }
+ }   
+    
+     
+}
+

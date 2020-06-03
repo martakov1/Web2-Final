@@ -1,0 +1,44 @@
+/* =============
+    Section 3
+============= */
+#section-3 {
+
+			display: grid;
+			grid-template-areas: ". section-3 .";
+			grid-template-columns: 15px auto 15px;
+			padding: 8% ;
+	
+			@include xl{
+				grid-template-columns: auto 1200px auto;
+			}
+			
+			#section-3-content{
+				grid-area: section-3;
+				
+			
+				
+	
+				section{
+				
+					p{
+						// padding: 100px 100px;
+						text-align: justify;
+						font-size: rem-cacl(18);
+						line-height: rem-calc(30);
+					}
+				}
+			}
+			#video{
+			
+				display: grid;
+				grid-template-columns: auto 90% auto;
+				grid-template-areas: ". video .";
+				padding: 0px 0px 20px 0px ;
+				
+				>section{
+					grid-area: video;
+				}
+			}
+	}
+
+   

@@ -1,0 +1,57 @@
+/* =============
+    Footer
+============= */
+footer{
+    background-color: $pink;
+    padding: 43px 0 46px;
+    ul{
+        display: flex;
+        justify-content: center;
+        
+        
+        @include md{
+            display: flex;
+            justify-content: left;  
+            padding: 0 30px ;
+            }
+        
+            @include lg{
+                display: flex;
+                justify-content: left;
+                padding: 0 30px ;
+            }
+        
+        
+            @include xl{
+                display: flex;
+                justify-content: left;
+                padding: 0 30px ;
+            }
+        li{
+        
+            margin: 0 20px;
+            list-style-type:none;
+            
+        
+        }
+    }
+    aside{
+        text-align: right;
+        padding: 10px 20px ;
+    }
+    a:hover,
+    a:active {                    
+    color:white;
+              }
+              a:link,
+a:visited {
+    color: $dark-purple;
+    font-size: rem-calc(55);
+    text-decoration: none;
+    transition: 0.25s;
+}
+h5 {
+    color: $white;
+    font-size: rem-calc(12);
+}
+}

@@ -1,0 +1,59 @@
+/* =============
+    Header
+============= */
+header {
+    background-color: $pink;
+
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+   
+
+    >div {
+        display: grid;
+        grid-template-areas: "burger logo" 
+        "nav nav";
+        grid-template-columns: auto 90%;
+
+        #logo-container{
+            grid-area: logo;
+            padding: 20px;
+            text-align: right;
+            color: white;
+            
+        }
+        
+
+
+
+        #burger-menu {
+            padding: 20px;
+           
+            @include lg {
+                display: none;
+            }
+            @include xl {
+                display: none;
+            }
+        }
+
+        nav {
+            background-color: $pink;
+            display: none;
+            // padding: 0px 15px;
+            text-align: center;
+            grid-area: nav;
+            
+            
+
+            @include lg {
+                background-color: $pink;
+                display: block !important;
+                padding: 0;
+            }
+        }
+    }
+}
