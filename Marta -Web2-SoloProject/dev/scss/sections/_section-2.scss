@@ -2,8 +2,9 @@
     Section 2
 ============= */
 #section-2{
-   
-    padding: 0% 20% 0% 20%;
+    
+    padding: 0% 20% 0% 15%;
+    // align-content: center;
      
     @include md{
         height: 512px;
@@ -31,11 +32,11 @@
         align-items: center;
         
         h2{
-        font-family: TitilliumWeb-Italic;
+        font-family: 'Titillium Web', sans-serif;
         font-size: 30px;
         color: #2A2369;
         text-align: center;
-        text-shadow: 9px 9px 12px rgba(0,0,0,0.50);
+        // text-shadow: 9px 9px 12px rgba(0,0,0,0.50);
     
         }
  }   

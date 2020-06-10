@@ -410,6 +410,24 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  #nav-container {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #nav-container {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #nav-container {
+    display: none;
+  }
+}
 #nav-container ul {
   list-style-type: none;
   height: 100%;
@@ -490,6 +508,21 @@ header > div #logo-container {
   padding: 20px;
   text-align: right;
   color: white;
+}
+@media (min-width: 768px) {
+  header > div #logo-container {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  header > div #logo-container {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  header > div #logo-container {
+    display: none;
+  }
 }
 header > div #burger-menu {
   padding: 20px;
@@ -582,6 +615,7 @@ footer h5 {
   background-position: center;
   background-size: cover;
   padding: 80px 0 80px;
+  text-align: center;
   height: 305px;
 }
 @media (min-width: 768px) {
@@ -673,7 +707,7 @@ footer h5 {
     Section 2
 ============= */
 #section-2 {
-  padding: 0% 20% 0% 20%;
+  padding: 0% 20% 0% 15%;
 }
 @media (min-width: 768px) {
   #section-2 {
@@ -702,11 +736,10 @@ footer h5 {
   align-items: center;
 }
 #section-2 .button-1 h2 {
-  font-family: TitilliumWeb-Italic;
+  font-family: "Titillium Web", sans-serif;
   font-size: 30px;
   color: #2A2369;
   text-align: center;
-  text-shadow: 9px 9px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* =============
@@ -788,10 +821,8 @@ footer h5 {
   }
 }
 #section-4 > div #gallery ul li {
-  background-color: #F7F7F7;
+  background-color: #7FABCD;
   list-style: none;
-  border: 7px solid #7EAACD;
-  border-radius: 5px;
 }
 #section-4 > div #gallery ul li div {
   background-size: cover;
@@ -825,7 +856,7 @@ footer h5 {
     line-height: 1.4375rem;
   }
 }
-#section-4 > div #gallery ul li section #button-2 {
+#section-4 > div #gallery ul li section .button-2 {
   font-size: 1.25rem;
   text-align: center;
   background: #2A2369;
@@ -839,7 +870,7 @@ footer h5 {
   align-items: center;
 }
 @media (min-width: 992px) {
-  #section-4 > div #gallery ul li section #button-2 {
+  #section-4 > div #gallery ul li section .button-2 {
     font-size: 1rem;
   }
 }
@@ -869,7 +900,7 @@ footer h5 {
 }
 
 /* =============
-    Section 5
+    Section 5-1
 ============= */
 #section-5 #section-5-content {
   grid-area: section-5;
@@ -892,8 +923,8 @@ footer h5 {
 #section-5 .section-5-1 #one {
   background-image: url("../img/section-5/5.1.jpg");
   height: 395px;
-  background-size: 180%;
-  background-position: -160px -5px;
+  background-size: 205%;
+  background-position: -190px 1600px;
 }
 @media (min-width: 768px) {
   #section-5 .section-5-1 #one {
@@ -906,70 +937,96 @@ footer h5 {
     width: 700px;
   }
 }
-#section-5 .section-5-2 {
+
+/* =============
+    Section 5-2
+============= */
+#section-5-content {
+  grid-area: section-5;
+  display: grid;
+}
+
+.section-5-2 {
   display: grid;
   grid-template-areas: ". two p .";
   padding: 3% 8%;
 }
-#section-5 .section-5-2 h1 {
+.section-5-2 h1 {
   padding: 0px 20px;
 }
-#section-5 .section-5-2 p {
+.section-5-2 p {
   text-align: justify;
   font-size: rem-cacl(18);
   line-height: 1.25rem;
   padding: 10px 20px 10px 20px;
 }
-#section-5 .section-5-2 #two {
+.section-5-2 #two {
   background-image: url("../img/section-5/5.2.jpg");
-  background-size: cover;
   height: 428px;
+  background-size: 125%;
+  background-position: -35px 0px;
 }
 @media (min-width: 768px) {
-  #section-5 .section-5-2 #two {
+  .section-5-2 #two {
+    background-size: 30%;
     height: 770px;
+    width: 770px;
   }
 }
 @media (min-width: 992px) {
-  #section-5 .section-5-2 #two {
+  .section-5-2 #two {
     height: 491px;
     width: 491px;
   }
 }
-#section-5 .section-5-3 {
+
+/* =============
+    Section 5-3
+============= */
+#section-5-content {
+  grid-area: section-5;
   display: grid;
-  grid-template-areas: ". three p .";
+}
+
+.section-5-3 {
   padding: 0% 8% 3%;
 }
-#section-5 .section-5-3 h1 {
+.section-5-3 h1 {
   padding: 0px 20px;
 }
-#section-5 .section-5-3 p {
+.section-5-3 p {
+  font-family: Montserrat;
+  letter-spacing: 0;
   text-align: justify;
   font-size: rem-cacl(18);
   line-height: 1.25rem;
   padding: 10px 20px 10px 20px;
 }
-#section-5 .section-5-3 #three {
+.section-5-3 #three {
   background-image: url("../img/section-5/5.3.jpg");
   height: 428px;
-  background-size: 220%;
-  background-position: 0px -5px;
+  background-size: 221.5%;
+  background-position: 0px 0px;
 }
 @media (min-width: 768px) {
-  #section-5 .section-5-3 #three {
+  .section-5-3 #three {
     height: 428px;
-    background-size: 100%;
+    background-size: 130%;
   }
 }
 @media (min-width: 992px) {
-  #section-5 .section-5-3 #three {
+  .section-5-3 #three {
     height: 438x;
     width: 788px;
-    display: grid;
-    grid-template-areas: "h1 three three" "p three three";
   }
 }
+@media (min-width: 1200px) {
+  .section-5-3 #three {
+    height: 500px;
+    width: 790px;
+  }
+}
+
 /* =============
     Section 6
 ============= */

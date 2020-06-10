@@ -2,7 +2,18 @@
     Navigation
 ============= */
 #nav-container {
-    // border: 1px solid green;
+    
+    padding: 15px;
+    
+    @include md{
+        display: none; 
+    }
+    @include lg {
+        display: none;
+    }
+    @include xl {
+        display: none;
+    }
     ul {
         // position: relative;
         // transform: translateX(70%);
@@ -22,8 +33,6 @@
         }
 
         li {
-           
-        //    border: 1px solid red;
           
         
             @include lg {

@@ -40,10 +40,10 @@
 					grid-template-columns: repeat(3, 1fr);
 				}
 				li {
-					background-color: #F7F7F7;
+					background-color: $blue;
 					list-style: none;
-					border: 7px solid #7EAACD;
-					border-radius: 5px;
+					// border: 7px solid #7EAACD;
+					// border-radius: 5px;
 
 					div {
 						background-size: cover;

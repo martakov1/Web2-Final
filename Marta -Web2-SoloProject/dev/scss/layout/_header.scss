@@ -19,11 +19,22 @@ header {
         grid-template-columns: auto 90%;
 
         #logo-container{
+            
             grid-area: logo;
             padding: 20px;
             text-align: right;
             color: white;
             
+
+    @include md{
+        display: none; 
+    }
+    @include lg {
+        display: none;
+    }
+    @include xl {
+        display: none;
+    }
         }
         
 
@@ -41,6 +52,7 @@ header {
         }
 
         nav {
+            
             background-color: $pink;
             display: none;
             // padding: 0px 15px;

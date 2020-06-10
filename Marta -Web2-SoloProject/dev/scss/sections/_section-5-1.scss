@@ -25,8 +25,8 @@
     #one {
     background-image: url("../img/section-5/5.1.jpg");
     height: 395px;
-    background-size: 220%;
-    background-position: -84px 1564px;
+    background-size: 205%;
+    background-position: -190px 1600px;
     
 
     @include md{
@@ -38,25 +38,25 @@
         height: 394x;
         width: 700px;
 
-        #side1{
-            background-image: url("../img/section-5/5.2.1.jpg");
-            height: 95px;
-        }
+        // #side1{
+        //     background-image: url("../img/section-5/5.2.1.jpg");
+        //     height: 95px;
+        // }
         
-        #side2{
-            background-image: url("../img/section-5/5.2.2.jpg");
-            height: 95px;
-        }
+        // #side2{
+        //     background-image: url("../img/section-5/5.2.2.jpg");
+        //     height: 95px;
+        // }
     
-        #side3{
-            background-image: url("../img/section-5/5.2.3.jpg");
-            height: 95px;
-        }
+        // #side3{
+        //     background-image: url("../img/section-5/5.2.3.jpg");
+        //     height: 95px;
+        // }
     
-        #side4{
-            background-image: url("../img/section-5/5.2.4jpg");
-            height: 95px;
-        }
+        // #side4{
+        //     background-image: url("../img/section-5/5.2.4jpg");
+        //     height: 95px;
+        // }
     }
 }
         }

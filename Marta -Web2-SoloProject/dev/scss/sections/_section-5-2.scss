@@ -21,8 +21,9 @@
     }
     #two {
     background-image: url("../img/section-5/5.2.jpg");
-    background-size: cover;
     height: 428px;
+    background-size: 125%;
+    background-position: -35px 0px;
 
     @include md{
         background-size: 30%;
@@ -37,3 +38,127 @@
     }
 }
         }
+// #section-5{
+    
+
+// #section-5-2 {
+//     display: grid;
+//     grid-template-areas: ". section-5-2 .";
+//     grid-template-columns: 15px auto 15px;
+
+//     @include xl {
+//         grid-template-columns: auto 1200px auto;
+//     }
+
+//     >div {
+//         grid-area: section-5-2;
+
+//         #section-5-2-content {
+//             @include lg {
+//                 display: grid;
+//                 gap: 66px;
+//                 grid-template-areas: "title hero"
+//                     "grid hero";
+//                 grid-template-columns: repeat(2, 1fr);
+//             }
+
+//             #section-5-2-hero {
+//                 div {
+//                     background-image: url("../img/section-5/5.2.jpg");
+//                     background-position: center;
+//                     background-size: cover;
+//                     height: 430px;
+
+//                     @include md {
+//                         height: 770px;
+//                     }
+
+//                     @include lg {
+//                         height: 100%;
+//                     }
+//                 }
+
+//                 @include lg {
+//                     grid-area: hero;
+//                     margin-top: 112px;
+//                 }
+//             }
+
+//             #section-5-2-title {
+//                 display: grid;
+//                 grid-template-areas: ". section-5-2-title .";
+//                 grid-template-columns: 15px auto 15px;
+//                 margin-top: 20px;
+
+//                 @include md {
+//                     grid-template-columns: auto 80% auto;
+//                     margin-top: 30px;
+//                 }
+
+//                 @include lg {
+//                     grid-area: title;
+//                 }
+
+//                 >div {
+//                     grid-area: section-5-2-title;
+
+//                     h1 {
+//                         margin-bottom: 20px;
+//                         text-align: center;
+
+//                         @include lg {
+//                             margin-bottom: 30px;
+//                             text-align: left;
+//                         }
+//                     }
+
+//                     p {
+//                         font-weight: 600;
+//                         line-height: 22px;
+//                     }
+//                 }
+//             }
+
+//             #section-5-2-grid {
+//                 display: none;
+
+//                 @include lg {
+//                     display: block;
+//                     grid-area: grid;
+//                     margin-top: 15px;
+
+//                     ul {
+//                         display: grid;
+//                         gap: 22px;
+//                         grid-template-columns: repeat(2, 1fr);
+//                         grid-template-rows: repeat(2, 200px);
+
+//                         li {
+//                             background-position: center;
+//                             background-size: cover;
+//                             height: 95px;
+//                         }
+
+//                         #side1 {
+//                             background-image: url("../img/section-5/5.2.1.jpg");
+//                         }
+
+//                         #side2 {
+//                             background-image: url("../img/section-5/5.2.2.jpg");
+//                         }
+
+//                         #side3 {
+//                             background-image: url("../img/section-5/5.2.3.jpeg");
+//                         }
+
+//                         #side4 {
+//                             background-image: url("../img/section-5/5.2.4.jpg");
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// }
+
