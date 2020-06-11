@@ -604,7 +604,7 @@ footer a:visited {
 }
 footer h5 {
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 /* =============
@@ -1034,7 +1034,7 @@ footer h5 {
   background-image: url("../img/section-6/logo.png");
   background-position: center;
   background-size: cover;
-  margin: 8% 23%;
+  margin: 8% 19%;
   height: 84px;
   width: 261px;
 }
