@@ -1,35 +1,34 @@
 /* =============
     Section 6
 ============= */
-#section-6{
-   .image{
-    background-image: url("../img/section-6/logo.png");
-    background-position: center;
-    background-size: cover;
-    margin: 8% 19%;
-    height: 84px;
-    width: 261px;
-    
-    @include md{
-        width: 342px;
-        height: 110px;
-        margin: 8% 31%;
+#section-6 {
+    .image {
+        background-image: url("../img/section-6/logo.png");
+        background-position: center;
+        background-size: cover;
+        margin: 8% 19%;
+        height: 84px;
+        width: 261px;
+
+        @include md {
+            width: 342px;
+            height: 110px;
+            margin: 8% 31%;
+        }
+
+        @include lg {
+            width: 419px;
+            height: 135px;
+            margin: 8% 38%;
+        }
+
+
+        @include xl {
+            width: 450px;
+            height: 150px;
+            margin: 8% 40%;
+        }
+
     }
 
-    @include lg{
-        width: 419px;
-        height: 135px;
-        margin: 8% 38%;
-    }
-
-
-    @include xl{
-        width: 450px;
-        height: 150px;
-        margin: 8% 40%;
-    }
-    
-   }
-    
 }
-    

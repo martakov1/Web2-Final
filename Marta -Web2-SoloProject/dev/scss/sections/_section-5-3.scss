@@ -2,68 +2,66 @@
     Section 5-3
 ============= */
 
-#section-5-content{
+#section-5-content {
     grid-area: section-5;
     display: grid;
 }
-.section-5-3{
+
+.section-5-3 {
     // display: grid;
     // grid-template-areas: ". three p .";
     padding: 0% 8% 3%;
 
-    @include md{
+    @include md {
         // display: grid;
         // grid-template-columns: auto 1200px auto;
         // grid-template-areas: "three h1 ."
         // "three h1 ."
         // "three p .";       
-            
+
     }
 
-    @include lg{
-       
-   
+    @include lg {}
+
+
+    @include xl {}
+
+    h1 {
+        padding: 0px 20px;
     }
 
-
-    @include xl{
-     
+    p {
+        font-family: Montserrat;
+        letter-spacing: 0;
+        text-align: justify;
+        font-size: rem-cacl(18);
+        line-height: rem-calc(20);
+        padding: 10px 20px 10px 20px;
     }
 
-h1{
-padding: 0px 20px;
-}
-p{
-font-family: Montserrat;
-letter-spacing:0;
-text-align: justify;
-font-size: rem-cacl(18);
-line-height: rem-calc(20);
-padding: 10px 20px 10px 20px;
-}
     #three {
-    background-image: url("../img/section-5/5.3.jpg");
-    height: 428px;
-    background-size: 221.5%;
-    background-position: 0px 0px;
-    
-    @include md{
+        background-image: url("../img/section-5/5.3.jpg");
         height: 428px;
-        background-size: 130%;
+        background-size: 221.5%;
+        background-position: 0px 0px;
 
-    }
+        @include md {
+            height: 428px;
+            background-size: 130%;
 
-    @include lg{
-        height: 438x;
-        width: 788px;
-    
-    }
-
-    @include xl{
-        height: 500px;
-        width: 790px;
-     
-    }
-
-}
         }
+
+        @include lg {
+            height: 438x;
+            width: 788px;
+
+        }
+
+        @include xl {
+            height: 500px;
+            width: 790px;
+
+        }
+
+    }
+}

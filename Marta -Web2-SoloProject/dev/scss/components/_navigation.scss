@@ -2,30 +2,33 @@
     Navigation
 ============= */
 #nav-container {
-    
+
     padding: 15px;
-    
-    @include md{
-        display: none; 
+
+    @include md {
+        display: none;
     }
+
     @include lg {
         display: none;
     }
+
     @include xl {
         display: none;
     }
+
     ul {
         // position: relative;
         // transform: translateX(70%);
-        
+
 
         list-style-type: none;
         height: 100%;
         // align-items: center;
         text-align: center;
         width: 100%;
-       
-       
+
+
 
         @include lg {
             display: flex;
@@ -33,8 +36,8 @@
         }
 
         li {
-          
-        
+
+
             @include lg {
                 align-items: center;
                 display: flex;
@@ -47,13 +50,13 @@
                 color: $white;
                 transition: 0.25s;
                 width: 100%;
-                
+
             }
 
             a:hover,
             a:active {
                 background-color: $dark-purple;
-            
+
             }
         }
     }

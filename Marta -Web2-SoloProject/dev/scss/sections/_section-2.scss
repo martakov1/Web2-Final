@@ -1,28 +1,29 @@
 /* =============
     Section 2
 ============= */
-#section-2{
-    
+#section-2 {
+
     padding: 0% 20% 0% 15%;
     // align-content: center;
-     
-    @include md{
+
+    @include md {
         height: 512px;
-       
+
     }
 
-    @include lg{
+    @include lg {
         height: 683px;
-       
+
     }
 
-    @include xl{
+    @include xl {
         height: 800px;
-        
+
     }
-    .button-1{
+
+    .button-1 {
         background: #F7C8E0;
-        box-shadow: 9px 9px 12px 0 rgba(0,0,0,0.50);
+        box-shadow: 9px 9px 12px 0 rgba(0, 0, 0, 0.50);
         border-radius: 4px;
         height: 87px;
         width: 242px;
@@ -30,17 +31,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        h2{
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 30px;
-        color: #2A2369;
-        text-align: center;
-        // text-shadow: 9px 9px 12px rgba(0,0,0,0.50);
-    
-        }
- }   
-    
-     
-}
 
+        h2 {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 30px;
+            color: #2A2369;
+            text-align: center;
+            // text-shadow: 9px 9px 12px rgba(0,0,0,0.50);
+
+        }
+    }
+
+
+}

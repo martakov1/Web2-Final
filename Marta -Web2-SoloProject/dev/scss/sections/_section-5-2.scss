@@ -1,45 +1,49 @@
 /* =============
     Section 5-2
 ============= */
-#section-5-content{
+#section-5-content {
     grid-area: section-5;
     display: grid;
 }
-.section-5-2{
+
+.section-5-2 {
     display: grid;
     grid-template-areas: ". two p .";
-    padding: 3% 8% ;
+    padding: 3% 8%;
 
-    h1{
+    h1 {
         padding: 0px 20px;
     }
-    p{
+
+    p {
         text-align: justify;
         font-size: rem-cacl(18);
         line-height: rem-calc(20);
         padding: 10px 20px 10px 20px;
     }
+
     #two {
-    background-image: url("../img/section-5/5.2.jpg");
-    height: 428px;
-    background-size: 125%;
-    background-position: -35px 0px;
+        background-image: url("../img/section-5/5.2.jpg");
+        height: 428px;
+        background-size: 125%;
+        background-position: -35px 0px;
 
-    @include md{
-        background-size: 30%;
-        height: 770px;
-        width: 770px;
+        @include md {
+            background-size: 30%;
+            height: 770px;
+            width: 770px;
 
-    }
+        }
 
-    @include lg{
-        height: 491px;
-        width: 491px;
+        @include lg {
+            height: 491px;
+            width: 491px;
+        }
     }
 }
-        }
+
 // #section-5{
-    
+
 
 // #section-5-2 {
 //     display: grid;
@@ -161,4 +165,3 @@
 //     }
 // }
 // }
-

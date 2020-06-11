@@ -1,65 +1,69 @@
 /* =============
     Section 5-1
 ============= */
-#section-5{
-    
+#section-5 {
 
-        #section-5-content{
-            grid-area: section-5;
-            display: grid;
-        }
-        .section-5-1{
 
-            display: grid;
-            grid-template-areas: ". one p .";
-			padding: 3% 8% ;
-            h1{
-                padding: 0px 20px;
-            }
-            p{
-                text-align: justify;
-                font-size: rem-cacl(18);
-                line-height: rem-calc(20);
-                padding: 10px 20px 10px 20px;
-            }
-    #one {
-    background-image: url("../img/section-5/5.1.jpg");
-    height: 395px;
-    background-size: 205%;
-    background-position: -190px 1600px;
-    
-
-    @include md{
-        height: 432px;
-
+    #section-5-content {
+        grid-area: section-5;
+        display: grid;
     }
 
-    @include lg{
-        height: 394x;
-        width: 700px;
+    .section-5-1 {
 
-        // #side1{
-        //     background-image: url("../img/section-5/5.2.1.jpg");
-        //     height: 95px;
-        // }
-        
-        // #side2{
-        //     background-image: url("../img/section-5/5.2.2.jpg");
-        //     height: 95px;
-        // }
-    
-        // #side3{
-        //     background-image: url("../img/section-5/5.2.3.jpg");
-        //     height: 95px;
-        // }
-    
-        // #side4{
-        //     background-image: url("../img/section-5/5.2.4jpg");
-        //     height: 95px;
-        // }
-    }
-}
+        display: grid;
+        grid-template-areas: ". one p .";
+        padding: 3% 8%;
+
+        h1 {
+            padding: 0px 20px;
         }
 
-      
+        p {
+            text-align: justify;
+            font-size: rem-cacl(18);
+            line-height: rem-calc(20);
+            padding: 10px 20px 10px 20px;
+        }
+
+        #one {
+            background-image: url("../img/section-5/5.1.jpg");
+            height: 395px;
+            background-size: 205%;
+            background-position: -190px 1600px;
+
+
+            @include md {
+                height: 432px;
+
+            }
+
+            @include lg {
+                height: 394x;
+                width: 700px;
+
+                // #side1{
+                //     background-image: url("../img/section-5/5.2.1.jpg");
+                //     height: 95px;
+                // }
+
+                // #side2{
+                //     background-image: url("../img/section-5/5.2.2.jpg");
+                //     height: 95px;
+                // }
+
+                // #side3{
+                //     background-image: url("../img/section-5/5.2.3.jpg");
+                //     height: 95px;
+                // }
+
+                // #side4{
+                //     background-image: url("../img/section-5/5.2.4jpg");
+                //     height: 95px;
+                // }
+            }
+        }
+    }
+
+
 }
